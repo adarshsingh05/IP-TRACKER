@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with your frontend URL
+    origin: 'http://localhost:63174', // Replace with your frontend URL
   }));
   // app.use(cors()); // Allow requests from any origin
 
@@ -25,6 +25,6 @@ app.get('/api/ip', (req, res) => {
 app.get('/api/visitors', (req, res) => {
     res.json(visitorData);
 });
-app.listen(9000, () => console.log('Server running on port 5000'));
+app.listen(9000, () => console.log('Server running on port 9000'));
 
 module.exports = app;
